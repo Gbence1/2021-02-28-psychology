@@ -1,0 +1,91 @@
+/*.background1{
+    width: 99%;
+    z-index: -1;
+    position: absolute;
+    overflow: hidden;
+}*/
+
+body{
+    user-select: none;
+}
+
+.background2{
+    pointer-events: none;
+    width: 99%;
+    z-index: -1;
+    position: absolute;
+    top: -215px;
+    opacity: 0.5;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 600px 700px 600px;
+    grid-template-rows: 100px 500px;
+}
+
+.title {
+    grid-column: 2;
+    grid-row: 1;
+    font-family: monospace;
+    text-transform: uppercase;
+    font-size: x-large;
+    text-align: center;
+    align-self: center;
+}
+
+.psi {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: center;
+    pointer-events: none;
+}
+
+.title * {
+    margin: 0;
+}
+
+.contents,
+.contents>ul{
+    position: fixed;
+    right: 100px;
+    margin-top: 0px;
+    list-style-type: none;
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.contents a:link,
+.contents a:active,
+.contents a:visited,
+.contents a:hover{
+    text-decoration: none;
+    font-family: Cinzel;
+    font-weight: 900;
+    color: #000000;
+}
+
+@font-face{
+    font-family: Cinzel;
+    src: url(../src/font/Cinzel-VariableFont_wght.ttf);
+}
+
+footer{
+    position: fixed;
+    right: 10px;
+    bottom: 0px;
+    font-size: xx-small;
+}
+
+.source{
+    list-style-type: none;
+}
+
+.scroll-top {
+    position: fixed;
+    right: 10px;
+    bottom: 25px;
+    scroll-behavior: smooth;
+}
